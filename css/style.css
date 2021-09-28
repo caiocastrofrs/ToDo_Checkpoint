@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;800&display=swap');
+body {
+    background-color: #5CDB95;
+    font-size: 62.5%;
+}
+*, html{
+    font-family: 'Rubik', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.todo-input-pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.todo-input{
+    width: 100%;
+    padding: .2rem;
+    margin: .2rem;
+}
+
+.todo-button{
+    border: none;
+    background: none;
+    width:2rem;
+    height:2rem;
+    cursor: pointer;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.todo{
+    display: flex;
+    margin: 1rem;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 5rem;
+    max-width: 26rem;
+    min-width: 200px;
+    border-radius: .5rem;
+    background-color: #edf5e1;
+    box-shadow: 0px 0px 20px #00000025;
+    position: relative;
+    transition: all .25s ease;
+}
+
+.todo-item{
+    font-size: 1.3rem;
+    margin:1.2rem;
+}
+
+.todo-descricao{
+    font-size: 1.1rem;
+    text-align: center; 
+    margin:0 1.2rem 1.2rem;
+}
+
+.complete-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    padding:.5rem;
+    background: #8EE4AF;
+    border-top-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    cursor: pointer;
+}
+.delete-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    width:2rem;
+    padding:.5rem;
+    background: #05386B;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    color: #EDF5E1;
+    cursor: pointer;
+}
+
+.todo-data{
+    position: absolute;
+    font-size:.8rem;
+    top: 5%;
+}.todo-data-final {
+    font-size:.8rem;
+}
+.todo-data::before{
+    content: 'Criado em: ';
+}
+
+.todo-data-final::before{
+    content: 'Finalizar em: ';
+}
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity:  .5;
+}
+.not-completed {
+    font-weight: 600;
+}
+.fall{
+    transform: translate(8rem) rotate(20deg);
+    opacity: 0;
+}
+
+select{
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.select{
+    margin: 1rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.header-container {
+    font-size:1.4rem;
+    height:2rem;
+    margin: 0 auto;
+}
+.header-lista {
+    margin: 0 5rem 0;
+}
+.header-lista li{
+    padding: .5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    color: #05386B;
+    margin:0 1.2rem 0;
+}
+.header-lista a {
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.header-lista a:hover {
+    background-color: #37968338;
+    box-shadow: .1rem .1rem 1.5rem #37968338;
+
+}
+input[type="text"],
+input[type="date"] {
+    border: none;
+    width: 20rem;
+    height: 1.8rem;
+    margin:.5rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+    box-shadow: .1rem .1rem 1.5rem #379683;
+}
+
+::placeholder {
+    color: #05386B;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border: .3rem solid #fff;
+    transition: all .150s ease;
+}
+.id-usuario {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header-container">
+            <ul class="header-lista">
+                <a href="index.html"><li>Minhas tarefas</li></a>
+                <a href="api.html"><li>API</li></a>
+            </ul>
+        </header>
+
+        <form action="#" class="todo-input-pai">
+            <input type="text"  class="todo-input"  placeholder="Título" id="todo-titulo">
+            <input type="text"  class="todo-input" id="todoDescricao" placeholder="Descrição">
+            <input type="date" class="todo-input" id="todoDataFinal" placeholder="Data para finalizar" required>
+            <button class="todo-button" type="submit"><i class="large material-icons">add_box</i></button>
+        </form>
+
+        <section class="todo-container">
+            <ul class="todo-list">
+            </ul>
+        </section>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
