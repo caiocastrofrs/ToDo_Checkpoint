@@ -191,7 +191,7 @@ input[type="date"] {
 
 input:focus {
     outline: none;
-    border: .3rem solid #fff;
+    transform:scaleX(1.0400);
     transition: all .150s ease;
 }
 .id-usuario {

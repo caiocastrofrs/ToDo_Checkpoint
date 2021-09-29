@@ -169,7 +169,7 @@ function getLocalTodo(todo){
         todoList.appendChild(todoDiv);
     }
 }
-
+//Essa função 
 function removeLocalTodo(todo){
     let todos; 
     if(localStorage.getItem('todos') === null){ 
