@@ -11,6 +11,6 @@ Gustavo Bitencourt
 
 Ruan Araújo
 
-Felipe Soares
+Felipe Araújo
 
 Pedro de Marchi
